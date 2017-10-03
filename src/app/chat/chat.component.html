@@ -1,3 +1,10 @@
-<p>
-  chat works!
-</p>
+<div class="row">
+  <h1>Chat</h1>
+  <p class="bg-primary" *ngFor="let message of messages | async">{{message.$value}}</p>
+  <div class="form-inline">
+    <div class="form-group">
+      <input type="text" id="messages" class="form-control" #message placeholder="Enter message">
+      <button type="button" class="btn btn-primary" (click)="createMessage(message.value)">Send</button>
+    </div>
+  </div>
+</div>
