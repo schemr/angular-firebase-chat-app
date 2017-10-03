@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Firebase Config
 
-./environments/envionment.ts
+./src/environments/envionment.ts
 
 ```javascript
 export const environment = {
